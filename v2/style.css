@@ -1,0 +1,28 @@
+/* Inherit V1's unchanged stylesheet for intro, branding and the unified card. */
+.option{font-size:16px;line-height:1.65}
+.quiz h1{margin-bottom:24px}
+.v2-error{padding:60px 0;max-width:650px;margin:auto}
+.v2-error h1{font-size:28px;line-height:1.5}
+.v2-error p{font-size:16px}
+.result-v2 .pair-title{font-weight:400;letter-spacing:normal;line-height:1.6}
+.character-members{display:grid;gap:14px}
+.character-members.multiple{grid-template-columns:repeat(2,minmax(0,1fr))}
+.character-copy{min-width:0;flex:1}
+.result-v2 .character-heading h2{margin:0;font-size:22px;font-weight:600;letter-spacing:-.65px;line-height:1.45}
+.style-description{margin:8px 0 0;font-size:14px;color:var(--muted);line-height:1.65}
+.mixed-title{margin:0 0 14px;font-size:22px;line-height:1.45;letter-spacing:-.65px}
+.result-v2 .selection-reason{margin:0;font-size:14px;line-height:1.65;color:var(--muted)}
+.result-v2 .disclaimer{white-space:pre-line}
+.result-v2 .result-actions>button{min-width:0}
+@media(max-width:700px){
+ .character-members.multiple{grid-template-columns:minmax(0,1fr);gap:14px}
+ .result-v2 .character-heading h2{display:flex;flex-direction:column;gap:2px;font-size:20px;line-height:1.4;letter-spacing:-.5px}
+ .mixed-title{font-size:20px;margin-bottom:12px}
+ .result-v2 .style-member{align-items:flex-start}
+}
+@media(max-width:600px){
+ .quiz h1{font-size:24px}
+ .option{padding:16px 14px;gap:10px}
+ .option.selected{padding:15px 13px}
+ .v2-error h1{font-size:24px}
+}
